@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FROZEN SPOON - Premium Ice Cream</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;500&display=swap"
+        rel="stylesheet">
     <style>
         * {
             margin: 0;
@@ -33,7 +36,10 @@
             overflow-x: hidden;
         }
 
-        h1, h2, h3, h4 {
+        h1,
+        h2,
+        h3,
+        h4 {
             font-family: 'Playfair Display', serif;
             font-weight: 700;
             color: var(--discord-white);
@@ -74,7 +80,8 @@
             background: linear-gradient(90deg, var(--discord-green), var(--discord-blurple));
             -webkit-background-clip: text;
             background-clip: text;
-            color: transparent; /* This makes the text transparent, showing the background gradient */
+            color: transparent;
+            /* This makes the text transparent, showing the background gradient */
             display: flex;
             align-items: center;
             text-shadow: 0 0 10px rgba(88, 101, 242, 0.5);
@@ -82,9 +89,10 @@
 
         /* NEW: Style for the logo image */
         .logo-img {
-            height: 40px; /* Adjust as needed */
+            height: 40px;
+            /* Adjust as needed */
             /* Removed margin-right if no text is next to it, or keep if you want space */
-            /* margin-right: 10px; */ 
+            /* margin-right: 10px; */
             vertical-align: middle;
         }
 
@@ -184,12 +192,15 @@
         /* MODIFIED: Enhanced hover and added active state for .profile-badge */
         .profile-badge:hover {
             background: rgba(35, 39, 42, 0.9);
-            transform: translateY(-2px) scale(1.02); /* Added scale */
-            box-shadow: 0 0 15px rgba(88, 101, 242, 0.5); /* Added subtle shadow */
+            transform: translateY(-2px) scale(1.02);
+            /* Added scale */
+            box-shadow: 0 0 15px rgba(88, 101, 242, 0.5);
+            /* Added subtle shadow */
         }
 
         .profile-badge:active {
-            transform: translateY(0) scale(0.98); /* Added active state */
+            transform: translateY(0) scale(0.98);
+            /* Added active state */
             box-shadow: 0 0 5px rgba(88, 101, 242, 0.2);
         }
 
@@ -248,10 +259,12 @@
                 transform: scale(1);
                 opacity: 0.5;
             }
+
             50% {
                 transform: scale(2);
                 opacity: 0;
             }
+
             100% {
                 transform: scale(1);
                 opacity: 0.5;
@@ -323,8 +336,8 @@
 
         /* Hero Section */
         .hero {
-            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
-                        url('https://images.unsplash.com/photo-1570197788417-0e82375c9371?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1680&q=80') no-repeat center center/cover;
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+                url('https://images.unsplash.com/photo-1570197788417-0e82375c9371?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1680&q=80') no-repeat center center/cover;
             height: 600px;
             display: flex;
             align-items: center;
@@ -342,9 +355,9 @@
             right: 0;
             bottom: 0;
             background: linear-gradient(45deg, var(--discord-blurple) 0%, transparent 70%),
-                        linear-gradient(135deg, var(--discord-pink) 0%, transparent 70%),
-                        linear-gradient(225deg, var(--discord-green) 0%, transparent 70%),
-                        linear-gradient(315deg, var(--discord-yellow) 0%, transparent 70%);
+                linear-gradient(135deg, var(--discord-pink) 0%, transparent 70%),
+                linear-gradient(225deg, var(--discord-green) 0%, transparent 70%),
+                linear-gradient(315deg, var(--discord-yellow) 0%, transparent 70%);
             opacity: 0.3;
             z-index: 1;
         }
@@ -363,6 +376,7 @@
                 opacity: 0;
                 transform: translateY(20px);
             }
+
             to {
                 opacity: 1;
                 transform: translateY(0);
@@ -378,10 +392,13 @@
 
         /* New style for tagline */
         .hero .tagline {
-            font-size: 24px; /* Slightly larger than regular paragraph */
+            font-size: 24px;
+            /* Slightly larger than regular paragraph */
             font-weight: 500;
-            margin-bottom: 25px; /* Space between tagline and description */
-            color: var(--discord-green); /* Highlight with a color */
+            margin-bottom: 25px;
+            /* Space between tagline and description */
+            color: var(--discord-green);
+            /* Highlight with a color */
             text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
         }
 
@@ -466,7 +483,7 @@
             border: 1px solid rgba(255, 255, 255, 0.1);
             animation: fadeIn 0.5s ease;
         }
-    
+
         .product-card:hover {
             transform: translateY(-10px);
             box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
@@ -530,25 +547,34 @@
 
         /* Product Detail Page */
         .product-detail {
-            display: none; /* Hidden by default */
+            display: none;
+            /* Hidden by default */
             padding: 40px 0;
             animation: fadeIn 0.5s ease;
         }
 
         /* New sections for About and Contact */
-        .about-section, .contact-section, .ice-cream-detail-section {
-            display: none; /* Hidden by default */
+        .about-section,
+        .contact-section,
+        .ice-cream-detail-section {
+            display: none;
+            /* Hidden by default */
             padding: 60px 0;
             text-align: center;
-            min-height: 400px; /* Ensure they take up some space */
+            min-height: 400px;
+            /* Ensure they take up some space */
         }
 
-        .about-section h2, .contact-section h2, .ice-cream-detail-section h2 {
+        .about-section h2,
+        .contact-section h2,
+        .ice-cream-detail-section h2 {
             font-size: 36px;
             margin-bottom: 20px;
         }
 
-        .about-section p, .contact-section p, .ice-cream-detail-section p {
+        .about-section p,
+        .contact-section p,
+        .ice-cream-detail-section p {
             font-size: 18px;
             max-width: 800px;
             margin: 0 auto 30px;
@@ -557,8 +583,13 @@
 
 
         @keyframes fadeIn {
-            from { opacity: 0; }
-            to { opacity: 1; }
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
         }
 
         .detail-container {
@@ -590,7 +621,8 @@
         .main-image img {
             width: 100%;
             height: 100%;
-            object-fit: cover; /* Ensures the image covers the area without distortion */
+            object-fit: cover;
+            /* Ensures the image covers the area without distortion */
         }
 
         .thumbnails {
@@ -617,7 +649,8 @@
         .thumbnail img {
             width: 100%;
             height: 100%;
-            object-fit: cover; /* Ensures the image covers the area without distortion */
+            object-fit: cover;
+            /* Ensures the image covers the area without distortion */
         }
 
         .thumbnail:hover {
@@ -787,7 +820,8 @@
             color: transparent;
         }
 
-        .footer-column p, .footer-column a {
+        .footer-column p,
+        .footer-column a {
             color: var(--discord-light);
             margin-bottom: 10px;
             display: block;
@@ -838,32 +872,32 @@
                 flex-direction: column;
                 text-align: center;
             }
-            
+
             nav ul {
                 margin-top: 20px;
                 justify-content: center;
             }
-            
+
             nav ul li {
                 margin: 0 10px;
             }
-            
+
             .nav-icons {
                 margin-top: 20px;
             }
-            
+
             .hero h1 {
                 font-size: 36px;
             }
-            
+
             .hero p {
                 font-size: 18px;
             }
-            
+
             .detail-container {
                 grid-template-columns: 1fr;
             }
-            
+
             .action-buttons {
                 flex-direction: column;
             }
@@ -874,9 +908,11 @@
             0% {
                 transform: translateY(0) rotate(0deg);
             }
+
             50% {
                 transform: translateY(-10px) rotate(5deg);
             }
+
             100% {
                 transform: translateY(0) rotate(0deg);
             }
@@ -898,11 +934,40 @@
         }
 
         /* Color variations for sprinkles */
-        .sprinkle:nth-child(1) { background-color: var(--discord-blurple); top: 10%; left: 5%; animation-delay: 0s; }
-        .sprinkle:nth-child(2) { background-color: var(--discord-pink); top: 20%; right: 10%; animation-delay: 1s; }
-        .sprinkle:nth-child(3) { background-color: var(--discord-green); bottom: 15%; left: 15%; animation-delay: 2s; }
-        .sprinkle:nth-child(4) { background-color: var(--discord-yellow); top: 30%; right: 20%; animation-delay: 3s; }
-        .sprinkle:nth-child(5) { background-color: var(--discord-red); bottom: 25%; right: 5%; animation-delay: 4s; }
+        .sprinkle:nth-child(1) {
+            background-color: var(--discord-blurple);
+            top: 10%;
+            left: 5%;
+            animation-delay: 0s;
+        }
+
+        .sprinkle:nth-child(2) {
+            background-color: var(--discord-pink);
+            top: 20%;
+            right: 10%;
+            animation-delay: 1s;
+        }
+
+        .sprinkle:nth-child(3) {
+            background-color: var(--discord-green);
+            bottom: 15%;
+            left: 15%;
+            animation-delay: 2s;
+        }
+
+        .sprinkle:nth-child(4) {
+            background-color: var(--discord-yellow);
+            top: 30%;
+            right: 20%;
+            animation-delay: 3s;
+        }
+
+        .sprinkle:nth-child(5) {
+            background-color: var(--discord-red);
+            bottom: 25%;
+            right: 5%;
+            animation-delay: 4s;
+        }
 
         /* Custom scrollbar */
         ::-webkit-scrollbar {
@@ -954,6 +1019,7 @@
                 opacity: 0;
                 transform: translateY(-20px) scale(0.9);
             }
+
             to {
                 opacity: 1;
                 transform: translateY(0) scale(1);
@@ -1139,9 +1205,12 @@
         }
 
         @keyframes bounce {
-            0%, 100% {
+
+            0%,
+            100% {
                 transform: translateX(-50%) translateY(0);
             }
+
             50% {
                 transform: translateX(-50%) translateY(-10px);
             }
@@ -1163,6 +1232,7 @@
                 transform: translateY(-100px) rotate(0deg);
                 opacity: 1;
             }
+
             100% {
                 transform: translateY(100vh) rotate(360deg);
                 opacity: 0;
@@ -1170,6 +1240,7 @@
         }
     </style>
 </head>
+
 <body>
     <!-- Decorative elements -->
     <div class="decoration">
@@ -1194,7 +1265,7 @@
             <div class="header-content">
                 <div class="logo">
                     <!-- MODIFIED: Replaced icon with image and removed text -->
-                    <img src="https://drive.google.com/uc?export=view&id=1T_AHgyQoWlTti22bjTsQKitE-EGGr7o3" alt="FROZEN SPOON Logo" class="logo-img">
+                    <img src="public/FROZEN_grey_1.png" alt="FROZEN SPOON Logo" class="logo-img">
                 </div>
                 <nav>
                     <ul>
@@ -1279,17 +1350,22 @@
                     <div class="hero-content">
                         <h1>Artisanal Ice Cream Crafted with Passion</h1>
                         <p class="tagline">I scream you scream we all scream for an Icecream</p>
-                        <p>Indulge in our premium, handcrafted ice creams made from the finest ingredients sourced from around the world.</p>
+                        <p>Indulge in our premium, handcrafted ice creams made from the finest ingredients sourced from
+                            around the world.</p>
                         <a href="#" class="btn nav-link" data-section="products-section">Explore Flavors</a>
                     </div>
                 </div>
             </section>
-            
+
             <!-- New Ice Cream Detail Section for Home Page -->
             <section class="container ice-cream-detail-section" id="ice-cream-detail-section">
                 <h2 class="section-title">The Art of Ice Cream</h2>
-                <p>At FROZEN SPOON, we believe ice cream is more than just a dessert; it's an art form. We meticulously select the finest, freshest ingredients, from rich dairy to exotic fruits and premium chocolates, to create flavors that tantalize your taste buds.</p>
-                <p>Our process combines traditional churning methods with innovative techniques, ensuring every scoop is perfectly smooth, creamy, and bursting with authentic flavor. Discover the difference that passion and quality ingredients make.</p>
+                <p>At FROZEN SPOON, we believe ice cream is more than just a dessert; it's an art form. We meticulously
+                    select the finest, freshest ingredients, from rich dairy to exotic fruits and premium chocolates, to
+                    create flavors that tantalize your taste buds.</p>
+                <p>Our process combines traditional churning methods with innovative techniques, ensuring every scoop is
+                    perfectly smooth, creamy, and bursting with authentic flavor. Discover the difference that passion
+                    and quality ingredients make.</p>
                 <a href="#" class="btn nav-link" data-section="products-section">View All Flavors</a>
             </section>
         </div>
@@ -1300,7 +1376,7 @@
             <div class="products">
                 <div class="product-card" data-id="1">
                     <div class="product-img">
-                        <img src="https://drive.google.com/uc?export=view&id=17RqYl4Ga35wAgRgzhXT222bbYYlSK4R7" alt="Vanilla Bourbon Ice Cream">
+                        <img src="public/vanilla_bourbon.png" alt="Vanilla Bourbon Ice Cream">
                     </div>
                     <div class="product-info">
                         <h3 class="product-title">Vanilla Bourbon</h3>
@@ -1311,7 +1387,7 @@
                 </div>
                 <div class="product-card" data-id="2">
                     <div class="product-img">
-                        <img src="https://drive.google.com/uc?export=view&id=1T_ABtDo9cdIXNIAA5XtByNMSOyXJgG9_" alt="Chocolate Noir Ice Cream">
+                        <img src="public/chocolate_noir.png" alt="Chocolate Noir Ice Cream">
                     </div>
                     <div class="product-info">
                         <h3 class="product-title">Chocolate Noir</h3>
@@ -1322,7 +1398,7 @@
                 </div>
                 <div class="product-card" data-id="3">
                     <div class="product-img">
-                        <img src="https://drive.google.com/uc?export=view&id=11YnFNi8uEF6KNcTqn4n7nNOjqqsRjx_9" alt="Strawberry Rhubarb Ice Cream">
+                        <img src="public/strawberry_rhubarb.png" alt="Strawberry Rhubarb Ice Cream">
                     </div>
                     <div class="product-info">
                         <h3 class="product-title">Strawberry Rhubarb</h3>
@@ -1337,8 +1413,13 @@
         <!-- About Section (New) -->
         <section class="container about-section" id="about-section">
             <h2 class="section-title">About FROZEN SPOON</h2>
-            <p>At FROZEN SPOON, we believe in crafting more than just ice cream; we create experiences. Our journey began in 2025 with a simple passion: to transform the finest, ethically sourced ingredients into extraordinary frozen delights. From the rich vanilla beans of Madagascar to the vibrant strawberries of local farms, every scoop tells a story of dedication and artistry.</p>
-            <p>We are committed to sustainability, quality, and innovation, constantly exploring new flavors and techniques to bring you unparalleled taste. Join us on a delicious adventure, one spoonful at a time.</p>
+            <p>At FROZEN SPOON, we believe in crafting more than just ice cream; we create experiences. Our journey
+                began in 2025 with a simple passion: to transform the finest, ethically sourced ingredients into
+                extraordinary frozen delights. From the rich vanilla beans of Madagascar to the vibrant strawberries of
+                local farms, every scoop tells a story of dedication and artistry.</p>
+            <p>We are committed to sustainability, quality, and innovation, constantly exploring new flavors and
+                techniques to bring you unparalleled taste. Join us on a delicious adventure, one spoonful at a time.
+            </p>
         </section>
 
         <!-- Contact Section (New) -->
@@ -1356,43 +1437,46 @@
                 <a href="#"><i class="fab fa-pinterest"></i></a>
             </div>
         </section>
-        
+
         <!-- Product Detail Pages -->
         <!-- Vanilla Bourbon Detail -->
         <section class="container product-detail" id="detail-1">
             <a href="#" class="back-to-products"><i class="fas fa-arrow-left"></i> Back to Products</a>
-            
+
             <div class="detail-container">
                 <div class="product-gallery">
                     <div class="main-image">
-                        <img src="https://drive.google.com/uc?export=view&id=17RqYl4Ga35wAgRgzhXT222bbYYlSK4R7" alt="Vanilla Bourbon Ice Cream">
+                        <img src="public/vanilla_bourbon.png" alt="Vanilla Bourbon Ice Cream">
                     </div>
                     <div class="thumbnails">
                         <div class="thumbnail">
-                            <img src="https://drive.google.com/uc?export=view&id=17RqYl4Ga35wAgRgzhXT222bbYYlSK4R7" alt="Vanilla Bourbon Thumbnail 1">
+                            <img src="public/vanilla_bourbon.png" alt="Vanilla Bourbon Thumbnail 1">
                         </div>
                         <div class="thumbnail">
-                            <img src="https://drive.google.com/uc?export=view&id=1zxqCdikqVhWwksN1sWdaKubh5ditpzZ5" alt="Vanilla Bourbon Thumbnail 2">
+                            <img src="public/vanilla_bourbon.png" alt="Vanilla Bourbon Thumbnail 2">
                         </div>
                         <div class="thumbnail">
-                            <img src="https://drive.google.com/uc?export=view&id=1G2diwzfbW9wVEgLc5sw1Vvgqi6-1nUOu" alt="Vanilla Bourbon Thumbnail 3">
+                            <img src="public/vanilla_bourbon.png" alt="Vanilla Bourbon Thumbnail 3">
                         </div>
                         <div class="thumbnail">
-                            <img src="https://drive.google.com/uc?export=view&id=1z3esv1ZvDqUlumLtGYfYyPLV0o_j3Yjs" alt="Vanilla Bourbon Thumbnail 4">
+                            <img src="public/vanilla_bourbon.png" alt="Vanilla Bourbon Thumbnail 4">
                         </div>
                     </div>
                 </div>
-                
+
                 <div class="product-details">
                     <h1>Vanilla Bourbon</h1>
                     <p class="product-description">
-                        Our Vanilla Bourbon ice cream is crafted with premium Madagascar vanilla beans and a hint of smooth bourbon. This sophisticated flavor combines the rich, creamy taste of vanilla with the warm, oaky notes of bourbon for a truly indulgent experience.
+                        Our Vanilla Bourbon ice cream is crafted with premium Madagascar vanilla beans and a hint of
+                        smooth bourbon. This sophisticated flavor combines the rich, creamy taste of vanilla with the
+                        warm, oaky notes of bourbon for a truly indulgent experience.
                     </p>
-                    
+
                     <div class="product-specs">
                         <div class="spec-item">
                             <span class="spec-label">Ingredients:</span>
-                            <span class="spec-value">Cream, milk, sugar, Madagascar vanilla beans, bourbon, egg yolks</span>
+                            <span class="spec-value">Cream, milk, sugar, Madagascar vanilla beans, bourbon, egg
+                                yolks</span>
                         </div>
                         <div class="spec-item">
                             <span class="spec-label">Allergens:</span>
@@ -1411,12 +1495,12 @@
                             <span class="spec-value">4.8/5 (243 reviews)</span>
                         </div>
                     </div>
-                    
+
                     <div class="price-container">
                         <span class="current-price">₹180.00</span>
                         <span class="original-price">₹250.00</span>
                     </div>
-                    
+
                     <div class="quantity-selector">
                         <span class="quantity-label">Quantity:</span>
                         <div class="quantity-controls">
@@ -1425,7 +1509,7 @@
                             <button class="quantity-btn">+</button>
                         </div>
                     </div>
-                    
+
                     <div class="action-buttons">
                         <button class="add-to-cart">Add to Cart</button>
                         <button class="buy-now">Buy Now</button>
@@ -1437,38 +1521,41 @@
         <!-- Chocolate Noir Detail -->
         <section class="container product-detail" id="detail-2">
             <a href="#" class="back-to-products"><i class="fas fa-arrow-left"></i> Back to Products</a>
-            
+
             <div class="detail-container">
                 <div class="product-gallery">
                     <div class="main-image">
-                        <img src="https://drive.google.com/uc?export=view&id=1T_ABtDo9cdIXNIAA5XtByNMSOyXJgG9_" alt="Chocolate Noir Ice Cream">
+                        <img src="public/chocolate_noir.png" alt="Chocolate Noir Ice Cream">
                     </div>
                     <div class="thumbnails">
                         <div class="thumbnail">
-                            <img src="https://drive.google.com/uc?export=view&id=1T_ABtDo9cdIXNIAA5XtByNMSOyXJgG9_" alt="Chocolate Noir Thumbnail 1">
+                            <img src="public/chocolate_noir.png" alt="Chocolate Noir Thumbnail 1">
                         </div>
                         <div class="thumbnail">
-                            <img src="https://drive.google.com/uc?export=view&id=15Gm7LqMF9J-dpWrIdVO9aGfXiKLSzUrG" alt="Chocolate Noir Thumbnail 2">
+                            <img src="public/chocolate_noir.png" alt="Chocolate Noir Thumbnail 2">
                         </div>
                         <div class="thumbnail">
-                            <img src="https://drive.google.com/uc?export=view&id=1sKQ9jvAtzupXuPxB2fE0LPVH-YZbL9RT" alt="Chocolate Noir Thumbnail 3">
+                            <img src="public/chocolate_noir.png" alt="Chocolate Noir Thumbnail 3">
                         </div>
                         <div class="thumbnail">
-                            <img src="https://drive.google.com/uc?export=view&id=1-rSCCBItx8sc5_5nau82duN6nhhgImRb" alt="Chocolate Noir Thumbnail 4">
+                            <img src="public/chocolate_noir.png" alt="Chocolate Noir Thumbnail 4">
                         </div>
                     </div>
                 </div>
-                
+
                 <div class="product-details">
                     <h1>Chocolate Noir</h1>
                     <p class="product-description">
-                        Indulge in the rich, intense flavor of our Chocolate Noir ice cream. Made with 70% dark chocolate from Ghana and sprinkled with crunchy cocoa nibs, this decadent treat is for true chocolate connoisseurs. Each spoonful delivers a deep, complex chocolate experience.
+                        Indulge in the rich, intense flavor of our Chocolate Noir ice cream. Made with 70% dark
+                        chocolate from Ghana and sprinkled with crunchy cocoa nibs, this decadent treat is for true
+                        chocolate connoisseurs. Each spoonful delivers a deep, complex chocolate experience.
                     </p>
-                    
+
                     <div class="product-specs">
                         <div class="spec-item">
                             <span class="spec-label">Ingredients:</span>
-                            <span class="spec-value">Cream, milk, 70% dark chocolate, sugar, cocoa nibs, egg yolks</span>
+                            <span class="spec-value">Cream, milk, 70% dark chocolate, sugar, cocoa nibs, egg
+                                yolks</span>
                         </div>
                         <div class="spec-item">
                             <span class="spec-label">Allergens:</span>
@@ -1487,12 +1574,12 @@
                             <span class="spec-value">4.9/5 (187 reviews)</span>
                         </div>
                     </div>
-                    
+
                     <div class="price-container">
                         <span class="current-price">₹250.00</span>
                         <span class="original-price">₹350.00</span>
                     </div>
-                    
+
                     <div class="quantity-selector">
                         <span class="quantity-label">Quantity:</span>
                         <div class="quantity-controls">
@@ -1501,7 +1588,7 @@
                             <button class="quantity-btn">+</button>
                         </div>
                     </div>
-                    
+
                     <div class="action-buttons">
                         <button class="add-to-cart">Add to Cart</button>
                         <button class="buy-now">Buy Now</button>
@@ -1513,34 +1600,36 @@
         <!-- Strawberry Rhubarb Detail -->
         <section class="container product-detail" id="detail-3">
             <a href="#" class="back-to-products"><i class="fas fa-arrow-left"></i> Back to Products</a>
-            
+
             <div class="detail-container">
                 <div class="product-gallery">
                     <div class="main-image">
-                        <img src="https://drive.google.com/uc?export=view&id=11YnFNi8uEF6KNcTqn4n7nNOjqqsRjx_9" alt="Strawberry Rhubarb Ice Cream">
+                        <img src="public/strawberry_rhubarb.png" alt="Strawberry Rhubarb Ice Cream">
                     </div>
                     <div class="thumbnails">
                         <div class="thumbnail">
-                            <img src="https://drive.google.com/uc?export=view&id=11YnFNi8uEF6KNcTqn4n7nNOjqqsRjx_9" alt="Strawberry Rhubarb Thumbnail 1">
+                            <img src="public/strawberry_rhubarb.png" alt="Strawberry Rhubarb Thumbnail 1">
                         </div>
                         <div class="thumbnail">
-                            <img src="https://drive.google.com/uc?export=view&id=1Iy70Gv0Cp34hC16E-9xBRPlKPQpOArT9" alt="Strawberry Rhubarb Thumbnail 2">
+                            <img src="public/strawberry_rhubarb.png" alt="Strawberry Rhubarb Thumbnail 2">
                         </div>
                         <div class="thumbnail">
-                            <img src="https://drive.google.com/uc?export=view&id=16yp5SAWDSKuvjf0RXohvGApY-G7XKBn-" alt="Strawberry Rhubarb Thumbnail 3">
+                            <img src="public/strawberry_rhubarb.png" alt="Strawberry Rhubarb Thumbnail 3">
                         </div>
                         <div class="thumbnail">
-                            <img src="https://drive.google.com/uc?export=view&id=16cdKXoiUj0mgAfnNArFLADxWyZyMG8Ax" alt="Strawberry Rhubarb Thumbnail 4">
+                            <img src="public/strawberry_rhubarb.png" alt="Strawberry Rhubarb Thumbnail 4">
                         </div>
                     </div>
                 </div>
-                
+
                 <div class="product-details">
                     <h1>Strawberry Rhubarb</h1>
                     <p class="product-description">
-                        A delightful combination of sweet strawberries and tangy rhubarb compote swirled throughout our creamy ice cream base. This flavor perfectly balances sweet and tart for a refreshing treat that's perfect for summer days.
+                        A delightful combination of sweet strawberries and tangy rhubarb compote swirled throughout our
+                        creamy ice cream base. This flavor perfectly balances sweet and tart for a refreshing treat
+                        that's perfect for summer days.
                     </p>
-                    
+
                     <div class="product-specs">
                         <div class="spec-item">
                             <span class="spec-label">Ingredients:</span>
@@ -1563,12 +1652,12 @@
                             <span class="spec-value">4.7/5 (156 reviews)</span>
                         </div>
                     </div>
-                    
+
                     <div class="price-container">
                         <span class="current-price">₹200.00</span>
                         <span class="original-price">₹350.00</span>
                     </div>
-                    
+
                     <div class="quantity-selector">
                         <span class="quantity-label">Quantity:</span>
                         <div class="quantity-controls">
@@ -1577,7 +1666,7 @@
                             <button class="quantity-btn">+</button>
                         </div>
                     </div>
-                    
+
                     <div class="action-buttons">
                         <button class="add-to-cart">Add to Cart</button>
                         <button class="buy-now">Buy Now</button>
@@ -1585,7 +1674,7 @@
                 </div>
             </div>
         </section>
-        
+
     </main>
 
     <!-- Footer -->
@@ -1594,7 +1683,8 @@
             <div class="footer-content">
                 <div class="footer-column">
                     <h3>FROZEN SPOON</h3>
-                    <p>Crafting premium ice cream experiences since 2025. Our products are made with the finest ingredients from around the world.</p>
+                    <p>Crafting premium ice cream experiences since 2025. Our products are made with the finest
+                        ingredients from around the world.</p>
                     <div class="social-icons">
                         <a href="#"><i class="fab fa-facebook-f"></i></a>
                         <a href="#"><i class="fab fa-instagram"></i></a>
@@ -1626,366 +1716,367 @@
                 </div>
             </div>
             <div class="copyright">
-            <p>&copy; 2025 FROZEN SPOON. All rights reserved.</p>
+                <p>&copy; 2025 FROZEN SPOON. All rights reserved.</p>
+            </div>
         </div>
-    </div>
-</footer>
+    </footer>
 
-<script>
-    // Product data
-    const products = {
-        1: {
-            name: "Vanilla Bourbon",
-            price: "₹180.00",
-            description: "Our Vanilla Bourbon ice cream is crafted with premium Madagascar vanilla beans and a hint of smooth bourbon. This sophisticated flavor combines the rich, creamy taste of vanilla with the warm, oaky notes of bourbon for a truly indulgent experience.",
-            ingredients: "Cream, milk, sugar, Madagascar vanilla beans, bourbon, egg yolks",
-            allergens: "Milk, eggs",
-            weight: "500ml",
-            serving: "1/2 cup (100ml)",
-            rating: "4.8/5 (243 reviews)",
-            color: "#ffb6c1"
-        },
-        2: {
-            name: "Chocolate Noir",
-            price: "₹250.00",
-            description: "Indulge in the rich, intense flavor of our Chocolate Noir ice cream. Made with 70% dark chocolate from Ghana and sprinkled with crunchy cocoa nibs, this decadent treat is for true chocolate connoisseurs.",
-            ingredients: "Cream, milk, 70% dark chocolate, sugar, cocoa nibs, egg yolks",
-            allergens: "Milk, eggs",
-            weight: "500ml",
-            serving: "1/2 cup (100ml)",
-            rating: "4.9/5 (187 reviews)",
-            color: "#b2b1ff"
-        },
-        3: {
-            name: "Strawberry Rhubarb",
-            price: "₹200.00",
-            description: "A delightful combination of sweet strawberries and tangy rhubarb compote swirled throughout our creamy ice cream base. This flavor perfectly balances sweet and tart for a refreshing treat.",
-            ingredients: "Cream, milk, strawberries, rhubarb, sugar, egg yolks",
-            allergens: "Milk, eggs",
-            weight: "500ml",
-            serving: "1/2 cup (100ml)",
-            rating: "4.7/5 (156 reviews)",
-            color: "#a0d2ff"
-        }
-    };
-
-    // DOM elements
-    const productCards = document.querySelectorAll('.product-card');
-    const productsSection = document.getElementById('products-section'); 
-    const productDetails = document.querySelectorAll('.product-detail');
-    const backButtons = document.querySelectorAll('.back-to-products');
-    const navLinks = document.querySelectorAll('.nav-link'); 
-    const cartCount = document.querySelector('.cart-count');
-    const floatingElements = document.querySelector('.floating-elements');
-    const profileBtn = document.getElementById('profileBtn');
-    const profileModal = document.getElementById('profileModal');
-    const closeModal = document.getElementById('closeModal');
-    const iceCream = document.getElementById('iceCream');
-    
-    // New DOM elements for sections
-    const homeContent = document.getElementById('home-content');
-    const aboutSection = document.getElementById('about-section');
-    const contactSection = document.getElementById('contact-section');
-    const iceCreamDetailSection = document.getElementById('ice-cream-detail-section'); 
-
-    // Search elements
-    const searchIcon = document.getElementById('searchIcon');
-    const searchOverlay = document.getElementById('searchOverlay');
-    const searchInput = document.getElementById('searchInput');
-    const searchCloseBtn = document.getElementById('searchCloseBtn');
-
-    // Function to hide all main content sections
-    function hideAllSections() {
-        homeContent.style.display = 'none';
-        productsSection.style.display = 'none'; 
-        aboutSection.style.display = 'none';
-        contactSection.style.display = 'none';
-        iceCreamDetailSection.style.display = 'none'; 
-        productDetails.forEach(detail => {
-            detail.style.display = 'none';
-        });
-    }
-
-    // Function to show a specific section
-    function showSection(sectionId) {
-        hideAllSections();
-        const targetSection = document.getElementById(sectionId);
-        if (targetSection) {
-            targetSection.style.display = 'block';
-            // Special handling for home-content which contains hero and new detail section
-            if (sectionId === 'home-content') {
-                document.querySelector('.hero').style.display = 'flex'; 
-                iceCreamDetailSection.style.display = 'block'; 
-            } else if (sectionId === 'products-section') {
-                // If 'Shop' is clicked, ensure only products section is visible
-                productsSection.style.display = 'block';
+    <script>
+        // Product data
+        const products = {
+            1: {
+                name: "Vanilla Bourbon",
+                price: "₹180.00",
+                description: "Our Vanilla Bourbon ice cream is crafted with premium Madagascar vanilla beans and a hint of smooth bourbon. This sophisticated flavor combines the rich, creamy taste of vanilla with the warm, oaky notes of bourbon for a truly indulgent experience.",
+                ingredients: "Cream, milk, sugar, Madagascar vanilla beans, bourbon, egg yolks",
+                allergens: "Milk, eggs",
+                weight: "500ml",
+                serving: "1/2 cup (100ml)",
+                rating: "4.8/5 (243 reviews)",
+                color: "#ffb6c1"
+            },
+            2: {
+                name: "Chocolate Noir",
+                price: "₹250.00",
+                description: "Indulge in the rich, intense flavor of our Chocolate Noir ice cream. Made with 70% dark chocolate from Ghana and sprinkled with crunchy cocoa nibs, this decadent treat is for true chocolate connoisseurs.",
+                ingredients: "Cream, milk, 70% dark chocolate, sugar, cocoa nibs, egg yolks",
+                allergens: "Milk, eggs",
+                weight: "500ml",
+                serving: "1/2 cup (100ml)",
+                rating: "4.9/5 (187 reviews)",
+                color: "#b2b1ff"
+            },
+            3: {
+                name: "Strawberry Rhubarb",
+                price: "₹200.00",
+                description: "A delightful combination of sweet strawberries and tangy rhubarb compote swirled throughout our creamy ice cream base. This flavor perfectly balances sweet and tart for a refreshing treat.",
+                ingredients: "Cream, milk, strawberries, rhubarb, sugar, egg yolks",
+                allergens: "Milk, eggs",
+                weight: "500ml",
+                serving: "1/2 cup (100ml)",
+                rating: "4.7/5 (156 reviews)",
+                color: "#a0d2ff"
             }
-            window.scrollTo({
-                top: 0,
-                behavior: 'smooth'
+        };
+
+        // DOM elements
+        const productCards = document.querySelectorAll('.product-card');
+        const productsSection = document.getElementById('products-section');
+        const productDetails = document.querySelectorAll('.product-detail');
+        const backButtons = document.querySelectorAll('.back-to-products');
+        const navLinks = document.querySelectorAll('.nav-link');
+        const cartCount = document.querySelector('.cart-count');
+        const floatingElements = document.querySelector('.floating-elements');
+        const profileBtn = document.getElementById('profileBtn');
+        const profileModal = document.getElementById('profileModal');
+        const closeModal = document.getElementById('closeModal');
+        const iceCream = document.getElementById('iceCream');
+
+        // New DOM elements for sections
+        const homeContent = document.getElementById('home-content');
+        const aboutSection = document.getElementById('about-section');
+        const contactSection = document.getElementById('contact-section');
+        const iceCreamDetailSection = document.getElementById('ice-cream-detail-section');
+
+        // Search elements
+        const searchIcon = document.getElementById('searchIcon');
+        const searchOverlay = document.getElementById('searchOverlay');
+        const searchInput = document.getElementById('searchInput');
+        const searchCloseBtn = document.getElementById('searchCloseBtn');
+
+        // Function to hide all main content sections
+        function hideAllSections() {
+            homeContent.style.display = 'none';
+            productsSection.style.display = 'none';
+            aboutSection.style.display = 'none';
+            contactSection.style.display = 'none';
+            iceCreamDetailSection.style.display = 'none';
+            productDetails.forEach(detail => {
+                detail.style.display = 'none';
             });
         }
-    }
 
-    // Event listeners for navigation links
-    navLinks.forEach(link => {
-        link.addEventListener('click', function(e) {
-            e.preventDefault();
-            const sectionId = this.getAttribute('data-section');
-            showSection(sectionId);
-            // Hide search overlay if active when navigating
-            searchOverlay.classList.remove('active');
-            searchInput.value = ''; // Clear search input
-            filterProducts(''); // Show all products
-        });
-    });
-
-    // Initial display: show home content
-    showSection('home-content');
-
-    // Create floating elements for the hero section
-    function createFloatingElements() {
-        const colors = ['#5865F2', '#EB459E', '#57F287', '#FEE75C', '#ED4245'];
-        for (let i = 0; i < 15; i++) {
-            const element = document.createElement('div');
-            element.classList.add('floating-element');
-            
-            // Random properties
-            const size = Math.random() * 30 + 10;
-            const color = colors[Math.floor(Math.random() * colors.length)];
-            
-            element.style.width = `${size}px`;
-            element.style.height = `${size}px`;
-            element.style.backgroundColor = color;
-            element.style.top = `${Math.random() * 100}%`;
-            element.style.left = `${Math.random() * 100}%`;
-            element.style.opacity = Math.random() * 0.5 + 0.1;
-            element.style.animation = `float ${Math.random() * 10 + 5}s infinite ease-in-out`;
-            element.style.animationDelay = `${Math.random() * 5}s`;
-            
-            floatingElements.appendChild(element);
+        // Function to show a specific section
+        function showSection(sectionId) {
+            hideAllSections();
+            const targetSection = document.getElementById(sectionId);
+            if (targetSection) {
+                targetSection.style.display = 'block';
+                // Special handling for home-content which contains hero and new detail section
+                if (sectionId === 'home-content') {
+                    document.querySelector('.hero').style.display = 'flex';
+                    iceCreamDetailSection.style.display = 'block';
+                } else if (sectionId === 'products-section') {
+                    // If 'Shop' is clicked, ensure only products section is visible
+                    productsSection.style.display = 'block';
+                }
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                });
+            }
         }
-    }
-    
-    // Initialize cart count
-    let cartItems = 0;
-    
-    // Show product detail (modified to work with new section logic)
-    productCards.forEach(card => {
-        card.addEventListener('click', function() {
-            const productId = this.getAttribute('data-id');
-            hideAllSections(); // Hide all sections first
-            document.getElementById(`detail-${productId}`).style.display = 'block';
-            
-            // Scroll to top of detail section
-            window.scrollTo({
-                top: 0,
-                behavior: 'smooth'
+
+        // Event listeners for navigation links
+        navLinks.forEach(link => {
+            link.addEventListener('click', function (e) {
+                e.preventDefault();
+                const sectionId = this.getAttribute('data-section');
+                showSection(sectionId);
+                // Hide search overlay if active when navigating
+                searchOverlay.classList.remove('active');
+                searchInput.value = ''; // Clear search input
+                filterProducts(''); // Show all products
             });
         });
-    });
 
-    // Back to products (modified to show products-section)
-    backButtons.forEach(button => {
-        button.addEventListener('click', function(e) {
-            e.preventDefault();
-            showSection('products-section'); // Show the products section
-            
-            // Scroll to products section
-            window.scrollTo({
-                top: productsSection.offsetTop - 100,
-                behavior: 'smooth'
+        // Initial display: show home content
+        showSection('home-content');
+
+        // Create floating elements for the hero section
+        function createFloatingElements() {
+            const colors = ['#5865F2', '#EB459E', '#57F287', '#FEE75C', '#ED4245'];
+            for (let i = 0; i < 15; i++) {
+                const element = document.createElement('div');
+                element.classList.add('floating-element');
+
+                // Random properties
+                const size = Math.random() * 30 + 10;
+                const color = colors[Math.floor(Math.random() * colors.length)];
+
+                element.style.width = `${size}px`;
+                element.style.height = `${size}px`;
+                element.style.backgroundColor = color;
+                element.style.top = `${Math.random() * 100}%`;
+                element.style.left = `${Math.random() * 100}%`;
+                element.style.opacity = Math.random() * 0.5 + 0.1;
+                element.style.animation = `float ${Math.random() * 10 + 5}s infinite ease-in-out`;
+                element.style.animationDelay = `${Math.random() * 5}s`;
+
+                floatingElements.appendChild(element);
+            }
+        }
+
+        // Initialize cart count
+        let cartItems = 0;
+
+        // Show product detail (modified to work with new section logic)
+        productCards.forEach(card => {
+            card.addEventListener('click', function () {
+                const productId = this.getAttribute('data-id');
+                hideAllSections(); // Hide all sections first
+                document.getElementById(`detail-${productId}`).style.display = 'block';
+
+                // Scroll to top of detail section
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                });
             });
         });
-    });
 
-    // Quantity controls
-    const quantityBtns = document.querySelectorAll('.quantity-btn');
-    
-    quantityBtns.forEach(btn => {
-        btn.addEventListener('click', function() {
-            const input = this.parentElement.querySelector('.quantity-input');
-            let value = parseInt(input.value);
-            
-            if (this.textContent === '+') {
-                value++;
-            } else if (this.textContent === '-' && value > 1) {
-                value--;
-            }
-            
-            input.value = value;
+        // Back to products (modified to show products-section)
+        backButtons.forEach(button => {
+            button.addEventListener('click', function (e) {
+                e.preventDefault();
+                showSection('products-section'); // Show the products section
+
+                // Scroll to products section
+                window.scrollTo({
+                    top: productsSection.offsetTop - 100,
+                    behavior: 'smooth'
+                });
+            });
         });
-    });
 
-    // Function to show a customized thank you message
-    function showThankYouMessage(productName) {
-        const messages = [
-            `Fantastic choice! Your ${productName} is now added to your cart. Get ready for a scoop of pure delight!`,
-            `Sweet! Your ${productName} is in the cart. We can't wait for you to taste the magic!`,
-            `Perfect! The ${productName} has joined your order. Thank you for choosing FROZEN SPOON – your happiness is our favorite flavor!`,
-            `Your ${productName} is secured! We appreciate your support and hope to see you back for more delicious treats soon!`
-        ];
-        const randomMessage = messages[Math.floor(Math.random() * messages.length)];
-        alert(randomMessage);
-    }
+        // Quantity controls
+        const quantityBtns = document.querySelectorAll('.quantity-btn');
 
-    // Add to cart functionality
-    const addToCartButtons = document.querySelectorAll('.add-to-cart');
-    
-    addToCartButtons.forEach(button => {
-        button.addEventListener('click', function() {
-            let productName;
-            
-            if (this.closest('.product-card')) {
-                productName = this.closest('.product-card').querySelector('.product-title').textContent;
-            } else {
-                productName = this.closest('.product-details').querySelector('h1').textContent;
-            }
-            
-            // Update cart count
-            cartItems++;
-            cartCount.textContent = cartItems;
-            cartCount.style.opacity = '1';
-            
-            // Add animation to cart icon
-            const cartIcon = document.querySelector('.fa-shopping-cart').parentNode;
-            cartIcon.style.animation = 'bounce 0.5s';
-            setTimeout(() => {
-                cartIcon.style.animation = '';
-            }, 500);
-            
-            // Create confetti effect
-            createConfetti();
-            
-            // Call the customized thank you message
-            showThankYouMessage(productName);
+        quantityBtns.forEach(btn => {
+            btn.addEventListener('click', function () {
+                const input = this.parentElement.querySelector('.quantity-input');
+                let value = parseInt(input.value);
+
+                if (this.textContent === '+') {
+                    value++;
+                } else if (this.textContent === '-' && value > 1) {
+                    value--;
+                }
+
+                input.value = value;
+            });
         });
-    });
 
-    // Profile modal functionality
-    profileBtn.addEventListener('click', function() {
-        profileModal.style.display = 'flex';
-    });
+        // Function to show a customized thank you message
+        function showThankYouMessage(productName) {
+            const messages = [
+                `Fantastic choice! Your ${productName} is now added to your cart. Get ready for a scoop of pure delight!`,
+                `Sweet! Your ${productName} is in the cart. We can't wait for you to taste the magic!`,
+                `Perfect! The ${productName} has joined your order. Thank you for choosing FROZEN SPOON – your happiness is our favorite flavor!`,
+                `Your ${productName} is secured! We appreciate your support and hope to see you back for more delicious treats soon!`
+            ];
+            const randomMessage = messages[Math.floor(Math.random() * messages.length)];
+            alert(randomMessage);
+        }
 
-    closeModal.addEventListener('click', function() {
-        profileModal.style.display = 'none';
-    });
+        // Add to cart functionality
+        const addToCartButtons = document.querySelectorAll('.add-to-cart');
 
-    // Close modal when clicking outside
-    window.addEventListener('click', function(e) {
-        if (e.target === profileModal) {
+        addToCartButtons.forEach(button => {
+            button.addEventListener('click', function () {
+                let productName;
+
+                if (this.closest('.product-card')) {
+                    productName = this.closest('.product-card').querySelector('.product-title').textContent;
+                } else {
+                    productName = this.closest('.product-details').querySelector('h1').textContent;
+                }
+
+                // Update cart count
+                cartItems++;
+                cartCount.textContent = cartItems;
+                cartCount.style.opacity = '1';
+
+                // Add animation to cart icon
+                const cartIcon = document.querySelector('.fa-shopping-cart').parentNode;
+                cartIcon.style.animation = 'bounce 0.5s';
+                setTimeout(() => {
+                    cartIcon.style.animation = '';
+                }, 500);
+
+                // Create confetti effect
+                createConfetti();
+
+                // Call the customized thank you message
+                showThankYouMessage(productName);
+            });
+        });
+
+        // Profile modal functionality
+        profileBtn.addEventListener('click', function () {
+            profileModal.style.display = 'flex';
+        });
+
+        closeModal.addEventListener('click', function () {
             profileModal.style.display = 'none';
-        }
-    });
+        });
 
-    // Ice cream animation interaction
-    iceCream.addEventListener('click', function() {
-        createConfetti();
-        
-        // Bounce animation
-        this.style.animation = 'bounce 0.5s';
-        setTimeout(() => {
-            this.style.animation = '';
-        }, 500);
-    });
+        // Close modal when clicking outside
+        window.addEventListener('click', function (e) {
+            if (e.target === profileModal) {
+                profileModal.style.display = 'none';
+            }
+        });
 
-    // Create confetti effect
-    function createConfetti() {
-        const colors = ['#5865F2', '#EB459E', '#57F287', '#FEE75C', '#ED4245'];
-        
-        for (let i = 0; i < 50; i++) {
-            const confetti = document.createElement('div');
-            confetti.classList.add('confetti');
-            
-            const color = colors[Math.floor(Math.random() * colors.length)];
-            const size = Math.random() * 10 + 5;
-            const posX = Math.random() * window.innerWidth;
-            const delay = Math.random() * 2;
-            
-            confetti.style.width = `${size}px`;
-            confetti.style.height = `${size}px`;
-            confetti.style.backgroundColor = color;
-            confetti.style.left = `${posX}px`;
-            confetti.style.animationDelay = `${delay}s`;
-            
-            document.body.appendChild(confetti);
-            
-            // Remove confetti after animation completes
+        // Ice cream animation interaction
+        iceCream.addEventListener('click', function () {
+            createConfetti();
+
+            // Bounce animation
+            this.style.animation = 'bounce 0.5s';
             setTimeout(() => {
-                confetti.remove();
-            }, 5000);
-        }
-    }
+                this.style.animation = '';
+            }, 500);
+        });
 
-    // MODIFIED: Thumbnail image switching functionality applied to all product detail pages
-    document.addEventListener('DOMContentLoaded', function() {
-        createFloatingElements();
-        
-        // Add bounce animation for cart
-        const style = document.createElement('style');
-        style.textContent = `
+        // Create confetti effect
+        function createConfetti() {
+            const colors = ['#5865F2', '#EB459E', '#57F287', '#FEE75C', '#ED4245'];
+
+            for (let i = 0; i < 50; i++) {
+                const confetti = document.createElement('div');
+                confetti.classList.add('confetti');
+
+                const color = colors[Math.floor(Math.random() * colors.length)];
+                const size = Math.random() * 10 + 5;
+                const posX = Math.random() * window.innerWidth;
+                const delay = Math.random() * 2;
+
+                confetti.style.width = `${size}px`;
+                confetti.style.height = `${size}px`;
+                confetti.style.backgroundColor = color;
+                confetti.style.left = `${posX}px`;
+                confetti.style.animationDelay = `${delay}s`;
+
+                document.body.appendChild(confetti);
+
+                // Remove confetti after animation completes
+                setTimeout(() => {
+                    confetti.remove();
+                }, 5000);
+            }
+        }
+
+        // MODIFIED: Thumbnail image switching functionality applied to all product detail pages
+        document.addEventListener('DOMContentLoaded', function () {
+            createFloatingElements();
+
+            // Add bounce animation for cart
+            const style = document.createElement('style');
+            style.textContent = `
             @keyframes bounce {
                 0%, 100% { transform: translateY(0); }
                 50% { transform: translateY(-5px); }
             }
         `;
-        document.head.appendChild(style);
+            document.head.appendChild(style);
 
-        // Get all product detail sections
-        const allProductDetailsSections = document.querySelectorAll('.product-detail');
+            // Get all product detail sections
+            const allProductDetailsSections = document.querySelectorAll('.product-detail');
 
-        allProductDetailsSections.forEach(section => {
-            const thumbnails = section.querySelectorAll('.thumbnail img');
-            const mainImage = section.querySelector('.main-image img');
+            allProductDetailsSections.forEach(section => {
+                const thumbnails = section.querySelectorAll('.thumbnail img');
+                const mainImage = section.querySelector('.main-image img');
 
-            // Add click event listener to each thumbnail within this section
-            thumbnails.forEach(thumbnail => {
-                thumbnail.addEventListener('click', function() {
-                    // Get the source of the clicked thumbnail image
-                    const newImageSrc = this.src;
-                    
-                    // Set the main image's source to the clicked thumbnail's source
-                    mainImage.src = newImageSrc;
+                // Add click event listener to each thumbnail within this section
+                thumbnails.forEach(thumbnail => {
+                    thumbnail.addEventListener('click', function () {
+                        // Get the source of the clicked thumbnail image
+                        const newImageSrc = this.src;
+
+                        // Set the main image's source to the clicked thumbnail's source
+                        mainImage.src = newImageSrc;
+                    });
                 });
             });
         });
-    });
 
-    // Search functionality
-    searchIcon.addEventListener('click', function(e) {
-        e.preventDefault();
-        searchOverlay.classList.add('active');
-        searchInput.focus(); // Focus on the input field when it appears
-        // Ensure products section is visible for search to work
-        showSection('products-section'); 
-    });
-
-    searchCloseBtn.addEventListener('click', function() {
-        searchOverlay.classList.remove('active');
-        searchInput.value = ''; // Clear search input
-        filterProducts(''); // Show all products when closing search
-    });
-
-    searchInput.addEventListener('keyup', function() {
-        const searchTerm = searchInput.value.toLowerCase();
-        filterProducts(searchTerm);
-    });
-
-    function filterProducts(searchTerm) {
-        const productsContainer = productsSection.querySelector('.products');
-        const productCards = productsContainer.querySelectorAll('.product-card');
-
-        productCards.forEach(card => {
-            const title = card.querySelector('.product-title').textContent.toLowerCase();
-            const description = card.querySelector('.product-desc').textContent.toLowerCase();
-
-            if (title.includes(searchTerm) || description.includes(searchTerm)) {
-                card.style.display = 'block'; // Show the product card
-            } else {
-                card.style.display = 'none'; // Hide the product card
-            }
+        // Search functionality
+        searchIcon.addEventListener('click', function (e) {
+            e.preventDefault();
+            searchOverlay.classList.add('active');
+            searchInput.focus(); // Focus on the input field when it appears
+            // Ensure products section is visible for search to work
+            showSection('products-section');
         });
-    }
-</script>
+
+        searchCloseBtn.addEventListener('click', function () {
+            searchOverlay.classList.remove('active');
+            searchInput.value = ''; // Clear search input
+            filterProducts(''); // Show all products when closing search
+        });
+
+        searchInput.addEventListener('keyup', function () {
+            const searchTerm = searchInput.value.toLowerCase();
+            filterProducts(searchTerm);
+        });
+
+        function filterProducts(searchTerm) {
+            const productsContainer = productsSection.querySelector('.products');
+            const productCards = productsContainer.querySelectorAll('.product-card');
+
+            productCards.forEach(card => {
+                const title = card.querySelector('.product-title').textContent.toLowerCase();
+                const description = card.querySelector('.product-desc').textContent.toLowerCase();
+
+                if (title.includes(searchTerm) || description.includes(searchTerm)) {
+                    card.style.display = 'block'; // Show the product card
+                } else {
+                    card.style.display = 'none'; // Hide the product card
+                }
+            });
+        }
+    </script>
 </body>
+
 </html>
